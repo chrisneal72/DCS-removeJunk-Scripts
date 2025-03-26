@@ -2,9 +2,9 @@
 ​
 ### Table of Contents
 - [Description](#Description)
-- [Clean Indvidual Zones](#Clean-Indvidual-Zones)
-- [Clean Entire Map](#Clean-Entire-Map)
-- [Remove When Unit Crashes](#Remove-When-Unit-Crashes)
+- [1 Clean Indvidual Zones](#Clean-Indvidual-Zones)
+- [2 lean Entire Map](#Clean-Entire-Map)
+- [3 Remove When Unit Crashes](#Remove-When-Unit-Crashes)
 ​
 ### Description
 I have created two removeJunk options. The third is an alternate version of [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/)
@@ -13,10 +13,10 @@ I started thinking about this while flying online and noticing that stutters str
 
 I found some information that people stated this function crashes servers. In the DCS Changelog I noticed in Dec '24 that they put in a fix and requested server owners to test. I can not find any discussion since that update where anyone confirms if the issue is resolved or if the function still has issues. I have this function implemented on a server, but it has not been tested with multiple players over a longer period of time.
 ​
-### Clean-Indvidual-Zones
+### 1 Clean-Indvidual-Zones
 Explanation coming soon
 ​
-### Clean-Entire-Map
+### 2 Clean-Entire-Map
 This script one script with two triggers. Ththis script can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality. 
 
 The GetTriggerZoneNames is put into a Once trigger to turn on a flag that the Switched trigger below watches 
@@ -26,6 +26,7 @@ The OneSphereCleansThemAll goes into a switched trigger. Here a flag is watched 
 ![Image](readme_images/MultipleZones-2.png)
 
 
-### Remove-When-Unit-Crashes
-Explanation coming soon
+### 3 Remove-When-Unit-Crashes
+*****This script is untested****
+This script was reworked from [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/). The difference is Asta's version only removes blue units and only if they are inside of a zone. My version does red and blue units anywhere on the map. This script uses MIST, so you must load MIST prior to this script. The script is meant to be initialized and running as it uses the event listener, then there is a mist scheduler to cause a 3 second delay. I do not know how this script will run when multiple units crash together, in fact I don't know how well it will run in general.
 ​
