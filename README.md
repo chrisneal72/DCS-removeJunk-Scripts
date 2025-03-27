@@ -14,16 +14,22 @@ I started thinking about this while flying online and noticing that stutters str
 I found some information that people stated this function crashes servers. In the DCS Changelog I noticed in Dec '24 that they put in a fix and requested server owners to test. I can not find any discussion since that update where anyone confirms if the issue is resolved or if the function still has issues. I have this function implemented on a server, but it has not been tested with multiple players over a longer period of time.
 ​
 ### 1 Clean-Indvidual-Zones
-Explanation coming soon
+This method is whe same as shown in [Hoggit's docs for removeJunk](https://wiki.hoggitworld.com/view/DCS_func_removeJunk). This has two files. The first (1_GetTriggerZoneNames) would be run when the mission starts to create an array of all trigger zones. The second (1_RemoveJunkInZones) is run how ever often you wish. This script can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality.
+
+The GetTriggerZoneNames is put into a Once trigger and an action to turn on a flag that the Switched trigger below watches 
+![Image](readme_images/MultiZones-1.png)
+
+The RemoveJunkInZones goes into a switched trigger. Here a flag is watched and after a set period from when the flag was turned on (900 seconds in my example, which is 15 minutes) the script runs. The script uses the array of trigger zones to creat the spheres. The trigger repeats until the end of the mission.
+![Image](readme_images/MultiZones-2.png)
 ​
 ### 2 Clean-Entire-Map
-This script one script with two triggers. Ththis script can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality. 
+This script one script with two triggers. This script can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality. 
 
-The GetTriggerZoneNames is put into a Once trigger to turn on a flag that the Switched trigger below watches 
-![Image](readme_images/MultipleZones-1.png)
+The intial trigger is put into a Once trigger to turn on a flag that the Switched trigger below watches 
+![Image](readme_images/OneBigZone-1.png)
 
 The OneSphereCleansThemAll goes into a switched trigger. Here a flag is watched and after a set period from when the flag was turned on (900 seconds in my example, which is 15 minutes) the script runs. The script uses one sphere that covers the entire map. The trigger repeats until the end of the mission.
-![Image](readme_images/MultipleZones-2.png)
+![Image](readme_images/OneBigZone-2.png)
 
 
 ### 3 Remove-When-Unit-Crashes
