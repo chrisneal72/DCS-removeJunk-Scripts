@@ -5,7 +5,7 @@
 - [1 Clean Indvidual Zones](#1-Clean-Indvidual-Zones)
 - [2 lean Entire Map](#2-Clean-Entire-Map)
 - [3 Remove When Unit Crashes](#3-Remove-When-Unit-Crashes)
-- [4 GrInDmEtAl Version](#4-GrInDmEtAl Version)
+- [4 GrInDmEtAl Version](#4-GrInDmEtAl-Version)
 ​
 ### Description
 I have created two removeJunk options. The third is an alternate version of [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/)
@@ -37,5 +37,5 @@ The OneSphereCleansThemAll goes into a switched trigger. Here a flag is watched 
 This script was reworked from [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/). The difference is Asta's version only removes blue units and only if they are inside of a zone. My version does red and blue units anywhere on the map. This script uses MIST, so you must load [MIST](https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua) prior to this script. The script is meant to be initialized and running as it uses the event listener, then there is a mist scheduler to cause a 3 second delay. I do not know how this script will run when multiple units crash together, in fact I don't know how well it will run in general.
 
 
-### 4-GrInDmEtAl Version
+### 4-GrInDmEtAl-Version
 GrInDmEtAl made some modifications with some error checking here: [GrInDmEtAl's DCS-JUNK-CLEANER](https://github.com/GrInDmEtAl/DCS-JUNK-CLEANER)
