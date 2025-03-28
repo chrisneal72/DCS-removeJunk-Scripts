@@ -5,6 +5,7 @@
 - [1 Clean Indvidual Zones](#Clean-Indvidual-Zones)
 - [2 lean Entire Map](#Clean-Entire-Map)
 - [3 Remove When Unit Crashes](#Remove-When-Unit-Crashes)
+- [4 4 GrInDmEtAl Version](#GrInDmEtAl Version)
 ​
 ### Description
 I have created two removeJunk options. The third is an alternate version of [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/)
