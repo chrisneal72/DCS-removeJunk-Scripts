@@ -13,6 +13,8 @@ I have created two removeJunk options. The third is an alternate version of [Ast
 I started thinking about this while flying online and noticing that stutters strated happenening the longer the server ran. I assumed ED was clearing the map of extraneous items, but they never do. The more units that die just increases the number of items to render. While researching something else I saw a recommendation that mission creators should "clean up their mission periodically". Researching that, I found the function removeJunk.
 
 I found some information that people stated this function crashes servers. In the DCS Changelog I noticed in Dec '24 that they put in a fix and requested server owners to test. I can not find any discussion since that update where anyone confirms if the issue is resolved or if the function still has issues. I have this function implemented on a server, but it has not been tested with multiple players over a longer period of time.
+
+[![Clip of removeJunk in action](https://img.youtube.com/vi/bJSIyVuNCM0/0.jpg)](https://www.youtube.com/watch?v=bJSIyVuNCM0)
 ​
 ### 1-Clean-Indvidual-Zones
 This method is whe same as shown in [Hoggit's docs for removeJunk](https://wiki.hoggitworld.com/view/DCS_func_removeJunk). This has two files. The first (1_GetTriggerZoneNames) would be run when the mission starts to create an array of all trigger zones. The second (1_RemoveJunkInZones) is run how ever often you wish. This script is wrapped in a function so can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality.
