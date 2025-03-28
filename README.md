@@ -3,7 +3,7 @@
 ### Table of Contents
 - [Description](#Description)
 - [1 Clean Indvidual Zones](#1-Clean-Indvidual-Zones)
-- [2 lean Entire Map](#2-Clean-Entire-Map)
+- [2 Clean Entire Map](#2-Clean-Entire-Map)
 - [3 Remove When Unit Crashes](#3-Remove-When-Unit-Crashes)
 - [4 GrInDmEtAl Version](#4-GrInDmEtAl-Version)
 ​
