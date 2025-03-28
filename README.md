@@ -14,7 +14,7 @@ I started thinking about this while flying online and noticing that stutters str
 
 I found some information that people stated this function crashes servers. In the DCS Changelog I noticed in Dec '24 that they put in a fix and requested server owners to test. I can not find any discussion since that update where anyone confirms if the issue is resolved or if the function still has issues. I have this function implemented on a server, but it has not been tested with multiple players over a longer period of time.
 
-Youtube example. Video is very short, you may need to replay a couple times.
+Youtube example of OneShpereClearsThemAll. Video is very short, you may need to replay a couple times.
 [![Clip of removeJunk in action](https://img.youtube.com/vi/bJSIyVuNCM0/0.jpg)](https://www.youtube.com/watch?v=bJSIyVuNCM0)
 ​
 ### 1-Clean-Indvidual-Zones
@@ -27,7 +27,7 @@ The RemoveJunkInZones goes into a switched trigger. Here a flag is watched and a
 ![Image](readme_images/MultiZones-2.png)
 ​
 ### 2-Clean-Entire-Map
-This script one script with two triggers. This script is wrapped in a function so it can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality. 
+This is one script (OneSphereCleansThemAll) with two triggers. This script is wrapped in a function so it can be put into an external script and be called however appropriate. My example shown here uses the built in trigger functionality. 
 
 The intial trigger is put into a Once trigger to turn on a flag that the Switched trigger below watches 
 ![Image](readme_images/OneBigZone-1.png)
