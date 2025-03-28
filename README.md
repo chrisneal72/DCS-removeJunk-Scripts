@@ -32,7 +32,7 @@ The OneSphereCleansThemAll goes into a switched trigger. Here a flag is watched 
 ![Image](readme_images/OneBigZone-2.png)
 
 *****This script is untested****
-This script was reworked from [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/). The difference is Asta's version only removes blue units and only if they are inside of a zone. My version does red and blue units anywhere on the map. This script uses MIST, so you must load MIST prior to this script. The script is meant to be initialized and running as it uses the event listener, then there is a mist scheduler to cause a 3 second delay. I do not know how this script will run when multiple units crash together, in fact I don't know how well it will run in general.
+This script was reworked from [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/). The difference is Asta's version only removes blue units and only if they are inside of a zone. My version does red and blue units anywhere on the map. This script uses MIST, so you must load [MIST](https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua) prior to this script. The script is meant to be initialized and running as it uses the event listener, then there is a mist scheduler to cause a 3 second delay. I do not know how this script will run when multiple units crash together, in fact I don't know how well it will run in general.
 
 
 ### 3 GrInDmEtAl Version
