@@ -31,8 +31,9 @@ The intial trigger is put into a Once trigger to turn on a flag that the Switche
 The OneSphereCleansThemAll goes into a switched trigger. Here a flag is watched and after a set period from when the flag was turned on (900 seconds in my example, which is 15 minutes) the script runs. The script uses one sphere that covers the entire map. The trigger repeats until the end of the mission.
 ![Image](readme_images/OneBigZone-2.png)
 
-
-### 3 Remove-When-Unit-Crashes
 *****This script is untested****
 This script was reworked from [Asta's removeJunkWhenCrash](https://github.com/frasta/DCS_script_removeJunkWhenCrash/). The difference is Asta's version only removes blue units and only if they are inside of a zone. My version does red and blue units anywhere on the map. This script uses MIST, so you must load MIST prior to this script. The script is meant to be initialized and running as it uses the event listener, then there is a mist scheduler to cause a 3 second delay. I do not know how this script will run when multiple units crash together, in fact I don't know how well it will run in general.
-​
+
+
+### 3 GrInDmEtAl Version
+GrInDmEtAl made some modifications with some error checking here: [GrInDmEtAl's DCS-JUNK-CLEANER](https://github.com/GrInDmEtAl/DCS-JUNK-CLEANER)
