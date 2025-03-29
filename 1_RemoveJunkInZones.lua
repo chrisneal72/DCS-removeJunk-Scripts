@@ -1,6 +1,6 @@
 -- This script REQUIRES 1_GetTriggerZoneNames
 
-function CleanUpMap (){
+function CleanUpMap ()
     for currentZoneNum in pairs(TriggerZoneList) do
         local sphere = trigger.misc.getZone(TriggerZoneList[currentZoneNum])
         sphere.point.y = land.getHeight({x = sphere.point.x, y = sphere.point.z})
@@ -13,6 +13,6 @@ function CleanUpMap (){
         }
         world.removeJunk(volS)
     end
-}
+end
 
 CleanUpMap ()
