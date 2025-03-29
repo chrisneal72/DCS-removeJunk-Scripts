@@ -1,3 +1,5 @@
+-- This script REQUIRES 1_GetTriggerZoneNames
+
 function CleanUpMap (){
     for currentZoneNum in pairs(TriggerZoneList) do
         local sphere = trigger.misc.getZone(TriggerZoneList[currentZoneNum])
