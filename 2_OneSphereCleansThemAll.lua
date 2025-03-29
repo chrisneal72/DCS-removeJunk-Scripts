@@ -1,4 +1,4 @@
-function CleanUpMap (){
+function CleanUpMap ()
     local sphere = {
         ["x"] = -114146.14614615,
         ["z"] = 287114.61461461,
@@ -12,6 +12,6 @@ function CleanUpMap (){
         }
     }
     world.removeJunk(volS)
-}
+end
 
 CleanUpMap ()
